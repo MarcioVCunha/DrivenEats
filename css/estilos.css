@@ -37,7 +37,7 @@ body{
 }
 
 .coluna-de-opcoes{
-    margin-top: 115px;
+    margin: 115px 0 100px 0;
 }
 
 .frases-topo-linhas{
@@ -100,4 +100,33 @@ li p{
 
 .preco-do-prato{
     font-size: 16px;
+}
+
+.barra-fim{
+    position: fixed;
+    height: 92px;
+    width: 100%;
+
+    bottom: 0;
+    right: 0;
+
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-top: 1px solid rgb(220, 220, 220);
+}
+
+.botao-final-cinza{
+    height: 61px;
+    width: 80vw;
+    border: none;
+    border-radius: 50px;
+
+    background-color: rgb(203, 203, 203);
+
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
