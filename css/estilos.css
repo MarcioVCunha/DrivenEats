@@ -42,11 +42,9 @@ body{
 
 .frases-topo-linhas{
     font-size: 26px;
-    margin-left: 19px;
+    margin: 15px 10px 0 19px;
 
     font-family: 'Righteous', cursive;
-
-    margin-bottom: 15px;
 }
 
 ul{
