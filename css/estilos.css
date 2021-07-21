@@ -119,14 +119,20 @@ li p{
     border-top: 1px solid rgb(220, 220, 220);
 }
 
-.botao-final-cinza{
+.botao-final{
     height: 61px;
     width: 80vw;
     border: none;
     border-radius: 50px;
 
-    background-color: rgb(203, 203, 203);
-
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
+}
+
+.cinza{
+    background-color: rgb(203, 203, 203);
+}
+
+.verde{
+    background-color: rgb(50, 183, 47);
 }
