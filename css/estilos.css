@@ -35,3 +35,71 @@ body{
 
     font-family: 'Roboto', sans-serif;
 }
+
+.coluna-de-opcoes{
+    margin-top: 115px;
+}
+
+.frases-topo-linhas{
+    font-size: 26px;
+    margin-left: 19px;
+
+    font-family: 'Righteous', cursive;
+
+    margin-bottom: 15px;
+}
+
+ul{
+    display: flex;
+
+    align-items: center;
+    padding-left: 19px;
+
+    overflow-x: scroll;
+}
+
+li{
+    flex: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: white;
+    border-radius: 9px;
+
+    width: 172px;
+    height: 216px;
+
+    padding: 14px;
+    margin: 10px 19px 10px 0;
+
+    box-shadow: 0 0 5px 2px lightgray;
+}
+
+li img{
+    width: 144px;
+    height: 87px;
+
+    border-radius: 4px;
+}
+
+li p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.nome-da-opcao{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.descricao-da-opcao{
+    font-size: 15px;
+    font-weight: 300;
+
+    color: #a6a6a6;
+}
+
+.preco-do-prato{
+    font-size: 16px;
+}
