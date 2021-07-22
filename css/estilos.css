@@ -54,6 +54,13 @@ ul{
     padding-left: 19px;
 
     overflow-x: scroll;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.ul::-webkit-scrollbar{
+    display: none;
 }
 
 li{
