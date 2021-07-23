@@ -106,5 +106,5 @@ function finalizar(){
 
     const pedido = encodeURIComponent("Olá, gostaria de fazer o pedido:\n- Prato: " + pedidoComidaSelecionado.innerHTML + "\n- Bebida: " + pedidoRefriSelecionado.innerHTML + "\n- Sobremesa: " + pedidoSobremesaSelecionado.innerHTML + "\nTotal: " + totalPedido)
 
-    window.location = 'https://wa.me/5519991509801?text=' + pedido;
+    window.location = 'https://wa.me/5519992732874?text=' + pedido;
 }
