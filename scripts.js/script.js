@@ -96,7 +96,5 @@ let mensagem = encodeURI('Teste 1234');
 let link = 'https://wa.me/5519992732874text=' + mensagem;
 
 function finalizar(){
-    botaoVerde.innerHTML = '<a><button class="roboto">Fechar pedido</button></a>';
-    botaoVerde.querySelector("a").setAttribute("href", );
-    botaoVerde.querySelector("a").setAttribute("target", "_blank")
+    document.querySelector("a").setAttribute("href", link);
 }
