@@ -91,3 +91,7 @@ function selecionar(opcaoSelecionada){
         botaoVerde.classList.remove("sumir");
     }
 }
+
+function finalizar(){
+    https://wa.me/5519992732874text=encodeURI('Teste mensagem Zap');
+}
