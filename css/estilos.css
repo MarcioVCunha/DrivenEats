@@ -81,6 +81,8 @@ li{
     margin: 10px 19px 10px 0;
 
     box-shadow: 0 0 5px 2px lightgray;
+
+    position: relative;
 }
 
 li img{
@@ -107,8 +109,18 @@ li p{
     color: #a6a6a6;
 }
 
-.preco-do-prato{
+.preco-da-opcao{
     font-size: 16px;
+}
+
+ion-icon{
+    color: green;
+    font-size: 20px;
+
+    position: absolute;
+
+    right: 10px;
+    bottom: 10px;
 }
 
 .barra-fim{
@@ -144,4 +156,12 @@ li p{
 
 .verde{
     background-color: rgb(50, 183, 47);
+}
+
+.borda-verde{
+    border: 5px solid rgb(50, 183, 47);
+}
+
+.sumir{
+    display: none;
 }
