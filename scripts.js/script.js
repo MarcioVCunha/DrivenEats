@@ -32,7 +32,6 @@ let boolComida = false;
 let boolRefri = false;
 let boolSobremesa = false;
 
-
 function selecionarComida(opcaoSelecionada){
     opcaoComida1.classList.remove("selecionado");
     checkBoxComida1.classList.add("sumir");
@@ -79,7 +78,7 @@ function selecionarSobremesa(opcaoSelecionada){
 }
 
 function selecionar(opcaoSelecionada){
-    let checkBox = opcaoSelecionada.querySelector("ion-icon");
+    const checkBox = opcaoSelecionada.querySelector("ion-icon");
 
     opcaoSelecionada.classList.toggle("selecionado");
 
@@ -92,9 +91,20 @@ function selecionar(opcaoSelecionada){
     }
 }
 
-let mensagem = encodeURI('Teste 1234');
-let link = 'https://wa.me/5519992732874text=' + mensagem;
-
 function finalizar(){
-    document.querySelector("a").setAttribute("href", link);
+    const pedidoComidaSelecionado = document.querySelector(".lista-comida > .selecionado > .nome-da-opcao");
+    const pedidoRefriSelecionado = document.querySelector(".lista-refri > .selecionado > .nome-da-opcao");
+    const pedidoSobremesaSelecionado = document.querySelector(".lista-sobremesa > .selecionado > .nome-da-opcao");
+
+    //Pegando os valores dos pratos de dentro do HTML, removendo os caracteres R$ e a ","
+    const valorComidaSelecionada = document.querySelector(".lista-comida > .selecionado > .preco-do-prato").innerHTML.replace(/\D+/g, "");
+    const valorRefriSelecionada = document.querySelector(".lista-refri > .selecionado > .preco-do-prato").innerHTML.replace(/\D+/g, "");
+    const valorSobremesaSelecionada = document.querySelector(".lista-sobremesa > .selecionado > .preco-do-prato").innerHTML.replace(/\D+/g, "");
+
+    let totalPedido = (Number(valorComidaSelecionada) + Number(valorRefriSelecionada) + Number(valorSobremesaSelecionada))/100;
+    totalPedido = totalPedido.toFixed(2);
+
+    const pedido = encodeURIComponent("Olá, gostaria de fazer o pedido:\n- Prato: " + pedidoComidaSelecionado.innerHTML + "\n- Bebida: " + pedidoRefriSelecionado.innerHTML + "\n- Sobremesa: " + pedidoSobremesaSelecionado.innerHTML + "\nTotal: " + totalPedido)
+
+    window.location = 'https://wa.me/5519991509801?text=' + pedido;
 }
