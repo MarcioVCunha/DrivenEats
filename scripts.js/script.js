@@ -79,7 +79,10 @@ function finalizar(){
     let totalPedido = (Number(valorComidaSelecionada) + Number(valorRefriSelecionada) + Number(valorSobremesaSelecionada))/100;
     totalPedido = totalPedido.toFixed(2);
 
-    const pedido = encodeURIComponent("Olá, gostaria de fazer o pedido:\n- Prato: " + nomeComidaSelecionado + "\n- Bebida: " + nomeRefriSelecionado + "\n- Sobremesa: " + nomeSobremesaSelecionado + "\nTotal: " + totalPedido)
+    const nomeCliente = prompt("Digite seu nome:");
+    const enderecoCliente = prompt("Digite seu endereço");
+
+    const pedido = encodeURIComponent("Olá, gostaria de fazer o pedido:\n- Prato: " + nomeComidaSelecionado + "\n- Bebida: " + nomeRefriSelecionado + "\n- Sobremesa: " + nomeSobremesaSelecionado + "\nTotal: " + totalPedido + "\n\nNome: " + nomeCliente + "\nEndereço: " + enderecoCliente);
 
     window.location = 'https://wa.me/5519992732874?text=' + pedido;
 }
